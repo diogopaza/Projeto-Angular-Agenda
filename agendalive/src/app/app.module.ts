@@ -17,9 +17,11 @@ import {MatTableModule} from '@angular/material/table';
 import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 import {MatChipsModule} from '@angular/material/chips';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HomeComponent,
     LiveListComponent,
     TableLivesComponent,
-    LocalDateTimePipe
+    LocalDateTimePipe,
+    LiveFormDialogComponent
   ],
   imports: [
     HttpClientModule,
@@ -42,7 +45,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatTableModule,
     MatChipsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
