@@ -41,6 +41,7 @@ export class LiveFormDialogComponent {
     this.rest.postLives(this.liveForm.value).subscribe(result => {});
     this.dialogRef.close();
     this.liveForm.reset();
+    window.location.reload();
   }
   
 }
