@@ -29,7 +29,7 @@ export class LiveService {
   }
 
   public postLives(live: any): Observable<Live>{
-    return this.httpClient.post<any>(this.apiUrl, live);
+    return this.httpClient.post<any>(this.apiUrl, live, this.httpOptions);
   }
 
 }

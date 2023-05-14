@@ -14,6 +14,7 @@ export class HomeComponent {
   addLive(): void {
     const dialogRef = this.dialog.open(LiveFormDialogComponent, {
       minWidth: '400px'
+     
       
     });
 
